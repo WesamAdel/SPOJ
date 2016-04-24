@@ -32,11 +32,6 @@ ll gcd(ll a, ll b){ return((b == 0)?a:gcd(b,a%b));  }
 ll lcm(ll a, ll b){ return (a*b)/gcd(a,b); }
 
 
-
-/*
-	- 3 segment trees, two on 1-d prefex sum array, one holds min, another holds max, and one holds max sum a range.
-*/
-
 struct node{
 	ll best, pre, suf, total;
 	node(){};
